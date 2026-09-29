@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>ElectronicInvoiceAdE</RootNamespace>
+        <AssemblyName>ElectronicInvoiceAdE.Security</AssemblyName>
+        <PackageId>ElectronicInvoiceAdE.Security</PackageId>
+        <Description>Cryptography components (.p7m unpacking) for Italian Electronic Invoices.</Description>
+        <PackageTags>fattura;fattura-elettronica;fatturapa;sdi;electronic-invoice;agenzia-entrate;invoice;italy;p7m;security;cryptography</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Serialization\ElectronicInvoiceAdE.Serialization.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Security.Cryptography.Pkcs" />
+    </ItemGroup>
+</Project>

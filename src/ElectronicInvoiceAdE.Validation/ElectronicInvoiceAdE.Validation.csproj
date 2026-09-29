@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>ElectronicInvoiceAdE</RootNamespace>
+        <AssemblyName>ElectronicInvoiceAdE.Validation</AssemblyName>
+        <PackageId>ElectronicInvoiceAdE.Validation</PackageId>
+        <Description>FluentValidation rules for Italian Electronic Invoices.</Description>
+        <PackageTags>fattura;fattura-elettronica;fatturapa;sdi;electronic-invoice;agenzia-entrate;invoice;italy;validation;fluentvalidation</PackageTags>
+    </PropertyGroup>
+	
+    <ItemGroup>
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Core\ElectronicInvoiceAdE.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" />
+    </ItemGroup>
+</Project>

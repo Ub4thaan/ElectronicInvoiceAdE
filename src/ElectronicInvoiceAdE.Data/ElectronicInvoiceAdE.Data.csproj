@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>ElectronicInvoiceAdE.Data</RootNamespace>
+        <AssemblyName>ElectronicInvoiceAdE.Data</AssemblyName>
+        <PackageId>ElectronicInvoiceAdE.Data</PackageId>
+        <Description>Entity Framework Core models and generic DbContext for ElectronicInvoiceAdE.</Description>
+        <PackageTags>fattura;fattura-elettronica;fatturapa;sdi;electronic-invoice;agenzia-entrate;invoice;italy;models;efcore;database</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Core\ElectronicInvoiceAdE.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    </ItemGroup>
+</Project>

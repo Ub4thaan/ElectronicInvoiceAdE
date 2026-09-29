@@ -1,0 +1,47 @@
+<Project>
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>13.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Packaging Metadata -->
+    <Authors>Ub4thaan</Authors>
+    <Product>ElectronicInvoiceAdE</Product>
+    <Copyright>Copyright (c) 2026 Ub4thaan</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Ub4thaan/ElectronicInvoiceAdE</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Ub4thaan/ElectronicInvoiceAdE</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- MinVer Git Tag Versioning (Milestone-based, tags without 'v' prefix, e.g. 1.9.1-preview.1, 1.9.1) -->
+    <MinVerTagPrefix></MinVerTagPrefix>
+    <MinVerMinimumMajorMinor>1.9</MinVerMinimumMajorMinor>
+    <MinVerDefaultPreReleaseIdentifiers>preview.1</MinVerDefaultPreReleaseIdentifiers>
+    <MinVerVersionOverride Condition="!Exists('$(MSBuildThisFileDirectory).git')">1.9.1-preview.1</MinVerVersionOverride>
+
+    <!-- SourceLink and Deterministic Builds -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+
+    <!-- Warning and Audit Governance -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);1591;1570</NoWarn>
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+
+  <!-- Package References and Assets for Packable Library Projects -->
+  <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('.Tests'))">
+    <PackageReference Include="MinVer" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+    <None Include="README.md" Pack="true" PackagePath="\" Condition="Exists('README.md')" />
+  </ItemGroup>
+</Project>

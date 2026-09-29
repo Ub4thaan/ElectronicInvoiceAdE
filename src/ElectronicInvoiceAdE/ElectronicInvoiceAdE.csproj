@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>ElectronicInvoiceAdE</RootNamespace>
+        <AssemblyName>ElectronicInvoiceAdE</AssemblyName>
+        <PackageId>ElectronicInvoiceAdE</PackageId>
+        <Description>Modern C# library for reading, validating, and writing Italian Electronic Invoices (SDI) with a clean English API, compliant with Agenzia delle Entrate Technical Specifications v1.9.1.</Description>
+        <PackageTags>fattura;fattura-elettronica;fatturapa;sdi;electronic-invoice;agenzia-entrate;invoice;italy</PackageTags>
+        <PackageReleaseNotes>Initial release for Agenzia delle Entrate Technical Specifications v1.9.1 with English-first domain models, multi-targeting (.NET 8.0, .NET 9.0, .NET 10.0), XML/P7M/ZIP support, and offline validation.</PackageReleaseNotes>
+    </PropertyGroup>
+	
+    <ItemGroup>
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Core\ElectronicInvoiceAdE.Core.csproj" />
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Serialization\ElectronicInvoiceAdE.Serialization.csproj" />
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Validation\ElectronicInvoiceAdE.Validation.csproj" />
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Security\ElectronicInvoiceAdE.Security.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+    </ItemGroup>
+</Project>

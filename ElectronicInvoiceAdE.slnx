@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ElectronicInvoiceAdE/ElectronicInvoiceAdE.csproj" />
+    <Project Path="src/ElectronicInvoiceAdE.Core/ElectronicInvoiceAdE.Core.csproj" />
+    <Project Path="src/ElectronicInvoiceAdE.Serialization/ElectronicInvoiceAdE.Serialization.csproj" />
+    <Project Path="src/ElectronicInvoiceAdE.Validation/ElectronicInvoiceAdE.Validation.csproj" />
+    <Project Path="src/ElectronicInvoiceAdE.Security/ElectronicInvoiceAdE.Security.csproj" />
+    <Project Path="src/ElectronicInvoiceAdE.Data/ElectronicInvoiceAdE.Data.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ElectronicInvoiceAdE.Core.Tests/ElectronicInvoiceAdE.Core.Tests.csproj" />
+    <Project Path="tests/ElectronicInvoiceAdE.Security.Tests/ElectronicInvoiceAdE.Security.Tests.csproj" />
+    <Project Path="tests/ElectronicInvoiceAdE.Serialization.Tests/ElectronicInvoiceAdE.Serialization.Tests.csproj" />
+    <Project Path="tests/ElectronicInvoiceAdE.Validation.Tests/ElectronicInvoiceAdE.Validation.Tests.csproj" />
+  </Folder>
+</Solution>

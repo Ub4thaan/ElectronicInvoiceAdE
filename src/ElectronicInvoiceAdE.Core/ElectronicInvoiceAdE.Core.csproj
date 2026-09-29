@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>ElectronicInvoiceAdE</RootNamespace>
+        <AssemblyName>ElectronicInvoiceAdE.Core</AssemblyName>
+        <PackageId>ElectronicInvoiceAdE.Core</PackageId>
+        <Description>Domain models for Agenzia delle Entrate Technical Specifications v1.9.1 (Ordinary and Simplified Invoices).</Description>
+        <PackageTags>fattura;fattura-elettronica;fatturapa;sdi;electronic-invoice;agenzia-entrate;invoice;italy;models</PackageTags>
+    </PropertyGroup>
+</Project>

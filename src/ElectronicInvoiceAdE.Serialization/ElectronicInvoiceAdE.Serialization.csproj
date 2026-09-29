@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>ElectronicInvoiceAdE</RootNamespace>
+        <AssemblyName>ElectronicInvoiceAdE.Serialization</AssemblyName>
+        <PackageId>ElectronicInvoiceAdE.Serialization</PackageId>
+        <Description>Serialization components (XML, JSON) for Italian Electronic Invoices.</Description>
+        <PackageTags>fattura;fattura-elettronica;fatturapa;sdi;electronic-invoice;agenzia-entrate;invoice;italy;serialization;xml;json</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ElectronicInvoiceAdE.Core\ElectronicInvoiceAdE.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Text.Encoding.CodePages" />
+    </ItemGroup>
+</Project>
