@@ -8,7 +8,7 @@
     <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="10.0.12" />
     <PackageVersion Include="System.Text.Encoding.CodePages" Version="10.0.12" />
     <!-- Packaging & Tooling Dependencies -->
-    <PackageVersion Include="MinVer" Version="6.0.0" />
+    <PackageVersion Include="MinVer" Version="8.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.401" />
     <!-- Test Dependencies -->
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
