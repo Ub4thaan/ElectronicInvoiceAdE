@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml.Serialization;
 
 namespace ElectronicInvoiceAdE.Ordinary.Bodies;
@@ -8,9 +8,9 @@ namespace ElectronicInvoiceAdE.Ordinary.Bodies;
 /// </summary>
 public class VehicleData
 {
-    [XmlElement("Data")]
-    public DateTime FirstRegistrationDate { get; set; }
+	[XmlElement("Data")]
+	public DateTime FirstRegistrationDate { get; set; }
 
-    [XmlElement("TotalePercorso")]
-    public string TotalTravel { get; set; } = string.Empty;
+	[XmlElement("TotalePercorso")]
+	public string TotalTravel { get; set; } = string.Empty;
 }

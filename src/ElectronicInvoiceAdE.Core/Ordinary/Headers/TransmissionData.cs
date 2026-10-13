@@ -1,4 +1,4 @@
-﻿using System.Xml.Serialization;
+using System.Xml.Serialization;
 using ElectronicInvoiceAdE.Common;
 using ElectronicInvoiceAdE.Lookups;
 
@@ -9,21 +9,21 @@ namespace ElectronicInvoiceAdE.Ordinary.Headers;
 /// </summary>
 public class TransmissionData
 {
-    [XmlElement("IdTrasmittente")]
-    public TaxId TransmitterId { get; set; } = new();
+	[XmlElement("IdTrasmittente")]
+	public TaxId TransmitterId { get; set; } = new();
 
-    [XmlElement("ProgressivoInvio")]
-    public string TransmissionSequence { get; set; } = string.Empty;
+	[XmlElement("ProgressivoInvio")]
+	public string TransmissionSequence { get; set; } = string.Empty;
 
-    [XmlElement("FormatoTrasmissione")]
-    public string Format { get; set; } = TransmissionFormat.PrivateParties;
+	[XmlElement("FormatoTrasmissione")]
+	public string Format { get; set; } = TransmissionFormat.PrivateParties;
 
-    [XmlElement("CodiceDestinatario")]
-    public string RecipientCode { get; set; } = "0000000";
+	[XmlElement("CodiceDestinatario")]
+	public string RecipientCode { get; set; } = "0000000";
 
-    [XmlElement("ContattiTrasmittente")]
-    public ContactInfo? TransmitterContacts { get; set; }
+	[XmlElement("ContattiTrasmittente")]
+	public ContactInfo? TransmitterContacts { get; set; }
 
-    [XmlElement("PECDestinatario")]
-    public string? RecipientPec { get; set; }
+	[XmlElement("PECDestinatario")]
+	public string? RecipientPec { get; set; }
 }

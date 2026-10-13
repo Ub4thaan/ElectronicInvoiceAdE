@@ -1,4 +1,4 @@
-﻿using System.Xml.Serialization;
+using System.Xml.Serialization;
 
 namespace ElectronicInvoiceAdE.Common;
 
@@ -8,19 +8,19 @@ namespace ElectronicInvoiceAdE.Common;
 /// </summary>
 public class TaxId
 {
-    public TaxId() { }
+	public TaxId() { }
 
-    public TaxId(string countryCode, string code)
-    {
-        CountryCode = countryCode;
-        Code = code;
-    }
+	public TaxId(string countryCode, string code)
+	{
+		CountryCode = countryCode;
+		Code = code;
+	}
 
-    [XmlElement("IdPaese")]
-    public string CountryCode { get; set; } = "IT";
+	[XmlElement("IdPaese")]
+	public string CountryCode { get; set; } = "IT";
 
-    [XmlElement("IdCodice")]
-    public string Code { get; set; } = string.Empty;
+	[XmlElement("IdCodice")]
+	public string Code { get; set; } = string.Empty;
 
-    public override string ToString() => $"{CountryCode}{Code}";
+	public override string ToString() => CountryCode + Code;
 }

@@ -8,14 +8,14 @@ namespace ElectronicInvoiceAdE.Data.Entities;
 /// </summary>
 public class InvoiceFileEntity
 {
-    public virtual Guid Id { get; set; }
-    
-    public virtual string RelativePath { get; set; } = string.Empty;
-    
-    public virtual string FileHash { get; set; } = string.Empty;
-    
-    public virtual byte[]? XmlContent { get; set; }
+	public virtual Guid Id { get; set; }
 
-    public virtual ICollection<OrdinaryInvoiceEntity> OrdinaryInvoices { get; set; } = new List<OrdinaryInvoiceEntity>();
-    public virtual ICollection<SimplifiedInvoiceEntity> SimplifiedInvoices { get; set; } = new List<SimplifiedInvoiceEntity>();
+	public virtual string RelativePath { get; set; } = string.Empty;
+
+	public virtual string FileHash { get; set; } = string.Empty;
+
+	public virtual byte[]? XmlContent { get; set; }
+
+	public virtual ICollection<OrdinaryInvoiceEntity> OrdinaryInvoices { get; set; } = new List<OrdinaryInvoiceEntity>();
+	public virtual ICollection<SimplifiedInvoiceEntity> SimplifiedInvoices { get; set; } = new List<SimplifiedInvoiceEntity>();
 }

@@ -1,4 +1,4 @@
-﻿using System.Xml.Serialization;
+using System.Xml.Serialization;
 
 namespace ElectronicInvoiceAdE.Common;
 
@@ -7,18 +7,18 @@ namespace ElectronicInvoiceAdE.Common;
 /// </summary>
 public class ReaRegistration
 {
-    [XmlElement("Ufficio")]
-    public string Office { get; set; } = string.Empty;
+	[XmlElement("Ufficio")]
+	public string Office { get; set; } = string.Empty;
 
-    [XmlElement("NumeroREA")]
-    public string ReaNumber { get; set; } = string.Empty;
+	[XmlElement("NumeroREA")]
+	public string ReaNumber { get; set; } = string.Empty;
 
-    [XmlElement("CapitaleSociale")]
-    public decimal? ShareCapital { get; set; }
+	[XmlElement("CapitaleSociale")]
+	public decimal? ShareCapital { get; set; }
 
-    [XmlElement("SocioUnico")]
-    public string? SoleShareholder { get; set; }
+	[XmlElement("SocioUnico")]
+	public string? SoleShareholder { get; set; }
 
-    [XmlElement("StatoLiquidazione")]
-    public string LiquidationState { get; set; } = Lookups.LiquidationState.NotInLiquidation;
+	[XmlElement("StatoLiquidazione")]
+	public string LiquidationState { get; set; } = Lookups.LiquidationState.NotInLiquidation;
 }

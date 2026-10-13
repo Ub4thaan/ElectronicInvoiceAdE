@@ -1,4 +1,4 @@
-﻿using System.Xml.Serialization;
+using System.Xml.Serialization;
 
 namespace ElectronicInvoiceAdE.Common;
 
@@ -7,32 +7,34 @@ namespace ElectronicInvoiceAdE.Common;
 /// </summary>
 public class LegalName
 {
-    [XmlElement("Denominazione")]
-    public string? CompanyName { get; set; }
+	[XmlElement("Denominazione")]
+	public string? CompanyName { get; set; }
 
-    [XmlElement("Nome")]
-    public string? FirstName { get; set; }
+	[XmlElement("Nome")]
+	public string? FirstName { get; set; }
 
-    [XmlElement("Cognome")]
-    public string? LastName { get; set; }
+	[XmlElement("Cognome")]
+	public string? LastName { get; set; }
 
-    [XmlElement("Titolo")]
-    public string? Title { get; set; }
+	[XmlElement("Titolo")]
+	public string? Title { get; set; }
 
-    [XmlElement("CodEORI")]
-    public string? EoriCode { get; set; }
+	[XmlElement("CodEORI")]
+	public string? EoriCode { get; set; }
 
-    [XmlIgnore]
-    public string FullName
-    {
-        get
-        {
-            if (!string.IsNullOrWhiteSpace(CompanyName))
-                return CompanyName!;
-            var parts = new[] { FirstName, LastName }.Where(p => !string.IsNullOrWhiteSpace(p));
-            return string.Join(" ", parts) ?? string.Empty;
-        }
-    }
+	[XmlIgnore]
+	public string FullName
+	{
+		get
+		{
+			if (!string.IsNullOrWhiteSpace(CompanyName))
+			{
+				return CompanyName;
+			}
+			var parts = new[] { FirstName, LastName }.Where(p => !string.IsNullOrWhiteSpace(p));
+			return string.Join(" ", parts) ?? string.Empty;
+		}
+	}
 
-    public override string ToString() => FullName;
+	public override string ToString() => FullName;
 }
