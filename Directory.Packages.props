@@ -6,7 +6,7 @@
   <ItemGroup>
     <!-- Analyzer Dependencies -->
     <PackageVersion Include="Meziantou.Analyzer" Version="3.0.302" />
-    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.35.0.4138" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.36.0.15337" />
     <PackageVersion Include="Roslynator.Analyzers" Version="5.0.1" />
     <PackageVersion Include="xunit.analyzers" Version="2.2.0" />
     <!-- Packaging & Tooling Dependencies -->
